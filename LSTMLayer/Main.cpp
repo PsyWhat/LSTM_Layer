@@ -3,14 +3,14 @@
 
 #include "stdafx.h"
 #include "MatrixD.h"
-#include "Parallel.h"
+#include "Misc/Parallel.h"
 #include <string>
 #include <locale>
 #include <random>
 #include <fstream>
 #include <sstream>
 #include <iomanip>
-#include "LSTMLayer.h"
+#include "NeuroNetwork/LSTM/LSTMLayer.h"
 
 
 using std::cout;

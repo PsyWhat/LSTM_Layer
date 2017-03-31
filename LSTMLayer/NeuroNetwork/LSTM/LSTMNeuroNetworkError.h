@@ -1,5 +1,5 @@
 #pragma once
-#include "NeuroNetworkError.h"
+#include "NeuroNetwork/NeuroNetworkError.h"
 
 class LSTMNeuroNetworkError : public NeuroNetworkError
 {
