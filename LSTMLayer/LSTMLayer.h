@@ -29,24 +29,15 @@ protected:
 	int numOutputs;
 
 	LSTMLayer( const int &inputs , const int &outputs )
+		: Wc( outputs , inputs ) , Uc( outputs , outputs ) ,
+		Wi( outputs , inputs ) , Ui( outputs , outputs ) ,
+		Wf( outputs , inputs ) , Uf( outputs , outputs ) ,
+		Wo( outputs , inputs ) , Uo( outputs , outputs ) ,
+		ctmo( outputs , 1 , 0.0 ) , htmo( outputs , 1 , 0.0 )
 	{
 		numInputs = inputs;
 		numOutputs = outputs;
 
-		Wc = MatrixD( outputs , inputs );
-		Uc = MatrixD( outputs , outputs );
-
-		Wi = MatrixD( outputs , inputs );
-		Ui = MatrixD( outputs , outputs );
-
-		Wo = MatrixD( outputs , inputs );
-		Uo = MatrixD( outputs , outputs );
-
-		Wf = MatrixD( outputs , inputs );
-		Uf = MatrixD( outputs , outputs );
-
-		ctmo = MatrixD( numOutputs , 1 );
-		htmo = MatrixD( numOutputs , 1 );
 	}
 
 	virtual NeuroNetworkLayerState ForwardPass( const MatrixD &data ) override
@@ -67,9 +58,9 @@ protected:
 		MatrixD ht = ot % ct.ApliedFunction( TanhActivationFunction );
 
 
-		LSTMLayerState state( ats, its, fts,
-			at,it,ft,ot,
-			data,ctmo,ct,ht,htmo
+		LSTMLayerState state( ats , its , fts ,
+			at , it , ft , ot ,
+			data , ctmo , ct , ht , htmo
 		);
 
 
@@ -86,7 +77,7 @@ protected:
 	{
 		const LSTMNeuroNetworkError &lstmError = static_cast<const LSTMNeuroNetworkError&>(error);
 		const LSTMLayerState &lstmState = static_cast<const LSTMLayerState&>(state);
-		MatrixD deltaOt = lstmError.outputError % lstmState.ct.ApliedFunction(TanhActivationFunction);
+		MatrixD deltaOt = lstmError.outputError % lstmState.ct.ApliedFunction( TanhActivationFunction );
 		MatrixD deltaCt = lstmError.outputError % deltaOt % (lstmState.ct.ApliedFunction( TanhActivationFunctionDiff )) + lstmError.cError;
 
 		MatrixD deltaIt = deltaCt % lstmState.at;

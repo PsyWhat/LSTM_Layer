@@ -30,6 +30,9 @@
     <Filter Include="Source Files\Misc">
       <UniqueIdentifier>{a48f825d-4612-4af6-b872-bb40366474b1}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Header Files\NeuroNetworks\FullConnectionLayer">
+      <UniqueIdentifier>{f4dc1396-c3b1-4125-8be0-f787511322cf}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <Text Include="ReadMe.txt" />
@@ -87,6 +90,15 @@
     </ClInclude>
     <ClInclude Include="Parallel.h">
       <Filter>Header Files\Misc</Filter>
+    </ClInclude>
+    <ClInclude Include="FullConnectionLayer.h">
+      <Filter>Header Files\NeuroNetworks\FullConnectionLayer</Filter>
+    </ClInclude>
+    <ClInclude Include="FullConnectionLayerState.h">
+      <Filter>Header Files\NeuroNetworks\FullConnectionLayer</Filter>
+    </ClInclude>
+    <ClInclude Include="FullConnectionLayerBPResult.h">
+      <Filter>Header Files\NeuroNetworks\FullConnectionLayer</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

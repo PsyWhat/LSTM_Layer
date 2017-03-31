@@ -151,6 +151,9 @@
   <ItemGroup>
     <ClInclude Include="ActivationFunctions.h" />
     <ClInclude Include="BackPropogateResult.h" />
+    <ClInclude Include="FullConnectionLayer.h" />
+    <ClInclude Include="FullConnectionLayerBPResult.h" />
+    <ClInclude Include="FullConnectionLayerState.h" />
     <ClInclude Include="LSTMBackPropogateResult.h" />
     <ClInclude Include="LSTMLayer.h" />
     <ClInclude Include="LSTMLayerState.h" />
