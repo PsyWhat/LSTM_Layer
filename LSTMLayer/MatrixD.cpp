@@ -1,5 +1,6 @@
 #include "stdafx.h"
 #include "MatrixD.h"
+#include "Parallel.h"
 
 using std::exception;
 using std::queue;

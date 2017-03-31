@@ -1,6 +1,6 @@
 #pragma once
 
-#include "NeuroNetwork/BackPropogateResult.h"
+#include "BackPropogateResult.h"
 #include "MatrixD.h"
 
 class LSTMBackPropogateResult : public BackPropagateResult

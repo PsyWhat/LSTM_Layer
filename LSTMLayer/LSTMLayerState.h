@@ -1,6 +1,6 @@
 #pragma once
 
-#include "NeuroNetwork/NeuroNetworkLayerState.h"
+#include "NeuroNetworkLayerState.h"
 #include "MatrixD.h"
 
 

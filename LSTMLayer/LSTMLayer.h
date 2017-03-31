@@ -3,8 +3,8 @@
 #include "stdafx.h"
 #include "MatrixD.h"
 #include "LSTMLayerState.h"
-#include "NeuroNetwork/ActivationFunctions.h"
-#include "NeuroNetwork/NeuroNetworkLayer.h"
+#include "ActivationFunctions.h"
+#include "NeuroNetworkLayer.h"
 #include "LSTMNeuroNetworkError.h"
 #include "LSTMBackPropogateResult.h"
 

@@ -5,73 +5,37 @@
       <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
       <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
     </Filter>
-    <Filter Include="Header Files">
-      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
-      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
-    </Filter>
     <Filter Include="Resource Files">
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
-    <Filter Include="Header Files\LSTM">
-      <UniqueIdentifier>{a8dd2a7f-8afe-41a1-afaf-8202854bd75b}</UniqueIdentifier>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{76eab8f9-614a-4824-8ba6-baf220f4d8a4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\NeuroNetworks">
+      <UniqueIdentifier>{766cdd7c-f7af-4bbe-9fa3-2ec57a364d44}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\NeuroNetworks\LSTM">
+      <UniqueIdentifier>{5a4e7591-4b0e-47af-8498-0ac4fba1139a}</UniqueIdentifier>
     </Filter>
     <Filter Include="Header Files\Matrix">
-      <UniqueIdentifier>{2e84d779-3b03-4fd6-ac52-67eb21332c28}</UniqueIdentifier>
+      <UniqueIdentifier>{5c3f869d-56ba-4b1d-8441-2bee38aaa580}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Misc">
+      <UniqueIdentifier>{041246ae-93d9-410a-a150-9db0f4ad391a}</UniqueIdentifier>
     </Filter>
     <Filter Include="Source Files\Matrix">
-      <UniqueIdentifier>{bc4811eb-6c9a-42d1-9b1c-10aad0860425}</UniqueIdentifier>
+      <UniqueIdentifier>{964ef1f3-877d-4e91-880d-04df799b576d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Misc">
+      <UniqueIdentifier>{a48f825d-4612-4af6-b872-bb40366474b1}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
     <Text Include="ReadMe.txt" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="stdafx.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="targetver.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Parallel.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="NeuroNetworkLayerState.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="ActivationFunctions.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="BackPropogateResult.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="NeuroNetworkLayer.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="NeuroNetworkError.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="LSTMBackPropogateResult.h">
-      <Filter>Header Files\LSTM</Filter>
-    </ClInclude>
-    <ClInclude Include="LSTMLayer.h">
-      <Filter>Header Files\LSTM</Filter>
-    </ClInclude>
-    <ClInclude Include="LSTMLayerState.h">
-      <Filter>Header Files\LSTM</Filter>
-    </ClInclude>
-    <ClInclude Include="LSTMNeuroNetworkError.h">
-      <Filter>Header Files\LSTM</Filter>
-    </ClInclude>
-    <ClInclude Include="MatrixD.h">
-      <Filter>Header Files\Matrix</Filter>
-    </ClInclude>
-  </ItemGroup>
-  <ItemGroup>
     <ClCompile Include="stdafx.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Parallel.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="Main.cpp">
@@ -80,5 +44,49 @@
     <ClCompile Include="MatrixD.cpp">
       <Filter>Source Files\Matrix</Filter>
     </ClCompile>
+    <ClCompile Include="Parallel.cpp">
+      <Filter>Source Files\Misc</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="stdafx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="LSTMBackPropogateResult.h">
+      <Filter>Header Files\NeuroNetworks\LSTM</Filter>
+    </ClInclude>
+    <ClInclude Include="LSTMNeuroNetworkError.h">
+      <Filter>Header Files\NeuroNetworks\LSTM</Filter>
+    </ClInclude>
+    <ClInclude Include="LSTMLayer.h">
+      <Filter>Header Files\NeuroNetworks\LSTM</Filter>
+    </ClInclude>
+    <ClInclude Include="LSTMLayerState.h">
+      <Filter>Header Files\NeuroNetworks\LSTM</Filter>
+    </ClInclude>
+    <ClInclude Include="NeuroNetworkError.h">
+      <Filter>Header Files\NeuroNetworks</Filter>
+    </ClInclude>
+    <ClInclude Include="NeuroNetworkLayer.h">
+      <Filter>Header Files\NeuroNetworks</Filter>
+    </ClInclude>
+    <ClInclude Include="NeuroNetworkLayerState.h">
+      <Filter>Header Files\NeuroNetworks</Filter>
+    </ClInclude>
+    <ClInclude Include="ActivationFunctions.h">
+      <Filter>Header Files\NeuroNetworks</Filter>
+    </ClInclude>
+    <ClInclude Include="BackPropogateResult.h">
+      <Filter>Header Files\NeuroNetworks</Filter>
+    </ClInclude>
+    <ClInclude Include="MatrixD.h">
+      <Filter>Header Files\Matrix</Filter>
+    </ClInclude>
+    <ClInclude Include="Parallel.h">
+      <Filter>Header Files\Misc</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
