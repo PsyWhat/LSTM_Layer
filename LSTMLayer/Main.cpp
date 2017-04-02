@@ -69,8 +69,8 @@ int main()
 {
 	srand( 356441412 );
 
-	MatrixD a( 6 , 6 );
-	MatrixD b( 6 , 6 );
+	MatrixD a( 2000 , 2000);
+	MatrixD b( 2000 , 2000 );
 	int rows;
 	int cols;
 
@@ -100,20 +100,16 @@ int main()
 			}
 		}
 	}
-	a.AplyFunction( []( double d )->double{ return getRand(); } );
+	a.AplyFunction([](double d)->double { return getRand(); });
 
-	cout << a<<endl;
-	cout << b<<endl;
-	cout << a*b << endl;
-	cout << a+b << endl;
-	cout << a - b << endl;
-	cout << a % b << endl;
-	cout << a << endl;
-	cout << a.Transposed()<<endl;
+	b.ApliedFunction([](double d)->double { return getRand(); });
+
+	MatrixD res = a * b;
+	MatrixD resp = a + b;
+	MatrixD resm = a - b;
+	MatrixD resh = a % b;
 
 
-
-	_getch();
     return 0;
 }
 

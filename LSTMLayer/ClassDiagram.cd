@@ -1,0 +1,107 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="BackPropagateResult" Collapsed="true">
+    <Position X="11.5" Y="1.75" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAQA=</HashCode>
+      <FileName>BackPropogateResult.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FullConnectionLayer" Collapsed="true">
+    <Position X="5.25" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAACIQAAAAAAAAAAAAAAAAAAAAQCAAAAAAAAAAAAA=</HashCode>
+      <FileName>FullConnectionLayer.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FullConnectionLayerBPResult" Collapsed="true">
+    <Position X="13" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABA=</HashCode>
+      <FileName>FullConnectionLayerBPResult.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FullConnectionLayerState" Collapsed="true">
+    <Position X="7.5" Y="3.25" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAQAAAAAACAAAABAAAAAAAAAAABA=</HashCode>
+      <FileName>FullConnectionLayerState.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="LSTMBackPropogateResult" Collapsed="true">
+    <Position X="10.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAgCIBAAQAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>LSTMBackPropogateResult.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="LSTMLayer" Collapsed="true">
+    <Position X="7.5" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAgCIAAAAAAIAAAFAAAAACAAAUACAAAAMAAAAABQA=</HashCode>
+      <FileName>LSTMLayer.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="LSTMLayerState" Collapsed="true">
+    <Position X="5.25" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQAAAAAAAAAAAAAAAAAAAAACAAAEQADAogEAAAAAAAA=</HashCode>
+      <FileName>LSTMLayerState.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="LSTMNeuroNetworkError" Collapsed="true">
+    <Position X="10.5" Y="6.25" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAIAAAAAAAAAAAAAAACAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>LSTMNeuroNetworkError.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MatrixD" Collapsed="true">
+    <Position X="15" Y="2" Width="1.5" />
+    <NestedTypes>
+      <Class Name="MatrixD::Proxy" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>MatrixD.h</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+      <Class Name="MatrixD::ConstProxy" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>MatrixD.h</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AAAAQAAAIACAAEgAAABAAQAAAAECASAECAAgAAgIAAI=</HashCode>
+      <FileName>MatrixD.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NeuroNetworkError" Collapsed="true">
+    <Position X="10.5" Y="5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAACAAAAAAAEAAAAAAAAAAA=</HashCode>
+      <FileName>NeuroNetworkError.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NeuroNetworkLayer" Collapsed="true">
+    <Position X="6.25" Y="5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAACIAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAA=</HashCode>
+      <FileName>NeuroNetworkLayer.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NeuroNetworkLayerState" Collapsed="true">
+    <Position X="6.5" Y="2" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>NeuroNetworkLayerState.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Typedef Name="MFloatType" Collapsed="true">
+    <Position X="15" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>MatrixD.h</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
