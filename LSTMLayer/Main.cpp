@@ -11,6 +11,7 @@
 #include <sstream>
 #include <iomanip>
 #include "LSTMLayer.h"
+#include "FullConnectionLayer.h"
 
 
 using std::cout;

@@ -10,6 +10,12 @@ public:
 
 	}
 
+
+	virtual BackPropagateResult operator+(const BackPropagateResult &a) const
+	{
+		return BackPropagateResult(inputError + a.inputError);
+	}
+
 };
 
 

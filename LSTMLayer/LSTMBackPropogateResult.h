@@ -30,5 +30,26 @@ public:
 
 	}
 
+	LSTMBackPropogateResult operator +(const LSTMBackPropogateResult &a) const
+	{
+		return LSTMBackPropogateResult(inputError + a.inputError, deltaCt + a.deltaCt,
+			deltaWc + a.deltaWc, deltaWi + a.deltaWi,
+			deltaWf + a.deltaWf, deltaWo + a.deltaWo,
+			deltaUc + a.deltaUc, deltaUi + a.deltaUi,
+			deltaUf + a.deltaUf, deltaUo + a.deltaUo
+		);
+	}
+
+	virtual BackPropagateResult operator +(const BackPropagateResult &a) const override
+	{
+		const LSTMBackPropogateResult &cs = static_cast<const LSTMBackPropogateResult &>(a);
+		return LSTMBackPropogateResult(inputError + cs.inputError, deltaCt + cs.deltaCt,
+			deltaWc + cs.deltaWc, deltaWi + cs.deltaWi,
+			deltaWf + cs.deltaWf, deltaWo + cs.deltaWo,
+			deltaUc + cs.deltaUc, deltaUi + cs.deltaUi,
+			deltaUf + cs.deltaUf, deltaUo + cs.deltaUo
+			);
+	}
+
 };
 
