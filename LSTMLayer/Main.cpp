@@ -21,11 +21,6 @@ using std::string;
 
 
 
-void Lol( int i , int j )
-{
-	i + j;
-}
-
 string ToLower( const string &input )
 {
 	string res = input;
@@ -101,6 +96,8 @@ int main()
 			}
 		}
 	}
+
+
 	a.AplyFunction([](double d)->double { return getRand(); });
 
 	b.ApliedFunction([](double d)->double { return getRand(); });

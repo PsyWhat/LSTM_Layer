@@ -33,6 +33,9 @@
     <Filter Include="Header Files\NeuroNetworks\FullConnectionLayer">
       <UniqueIdentifier>{f4dc1396-c3b1-4125-8be0-f787511322cf}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Header Files\NeuroNetworks\MultiLayerNeuroNet">
+      <UniqueIdentifier>{be56bd44-a49b-4188-89e3-d02627fbdd1f}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <Text Include="ReadMe.txt" />
@@ -99,6 +102,9 @@
     </ClInclude>
     <ClInclude Include="FullConnectionLayerBPResult.h">
       <Filter>Header Files\NeuroNetworks\FullConnectionLayer</Filter>
+    </ClInclude>
+    <ClInclude Include="MultiLayerNeuroNetwork.h">
+      <Filter>Header Files\NeuroNetworks\MultiLayerNeuroNet</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

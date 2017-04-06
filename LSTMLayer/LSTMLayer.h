@@ -28,6 +28,8 @@ protected:
 	int numInputs;
 	int numOutputs;
 
+public:
+
 	LSTMLayer( const int &inputs , const int &outputs )
 		: Wc( outputs , inputs ) , Uc( outputs , outputs ) ,
 		Wi( outputs , inputs ) , Ui( outputs , outputs ) ,
@@ -37,6 +39,15 @@ protected:
 	{
 		numInputs = inputs;
 		numOutputs = outputs;
+
+	}
+
+	LSTMLayer(const LSTMLayer &copy) 
+		:Wc(copy.Wc), Wi(copy.Wi), Wo(copy.Wo),
+		Uc(copy.Uc), Ui(copy.Ui), Uo(copy.Uo), Uf(copy.Uo),
+		ctmo(copy.ctmo), htmo(copy.htmo), 
+		numInputs(copy.numInputs), numOutputs(copy.numOutputs)
+	{
 
 	}
 
